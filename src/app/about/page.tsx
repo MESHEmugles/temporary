@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import background from "../../../public/backgroud.png";
-import sidepics from "../../../public/About1.webp";
-import rightside from "../../../public/righty1.webp";
+import sidepics from "../../../public/about.png";
+import rightside from "../../../public/righty.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Aboutanime from "@/utils/animationeffects/aboutanime";
