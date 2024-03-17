@@ -29,3 +29,22 @@ header {
   backdrop-filter: blur(3.1px);
   -webkit-backdrop-filter: blur(3.1px);
 }
+
+
+@media (max-width: 700px) {
+  
+  /* ABOUT PAGE */
+  .sub-banner{
+    background: url('/backgroud.png') rgba(235, 235, 235, 0.45);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    -webkit-filter: brightness(0.85);
+    filter: brightness(0.9);
+  }
+
+  .sub-banner .image{
+    display: none;
+  }
+}
