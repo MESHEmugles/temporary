@@ -12,12 +12,12 @@ const Section = () => {
               initial={{ opacity: 0, x: -90 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeOut", duration: 1 }}
-              className="flex-initial"
+              className="flex-initial sm:-ml-44 md:ml-0"
             >
               <Image
                 src={sidepics}
                 alt="side pics"
-                className="mr-24 w-[75%] md:mr-0 md:w-[45vw]"
+                className="mr-32 -ml-16 md:ml-0 w-[80%] md:mr-0 md:w-[45vw]"
               />
             </motion.div>
             <motion.div
