@@ -27,7 +27,9 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-[1440px] items-center justify-between px-[24.94px] pb-3 pt-[10px] lg:py-2 lg:pl-[75px] lg:pr-[16.83px]">
         <div className="flex items-center gap-[148.76px]">
-          <Image src={logo} alt="Inspiraspace logo" className="" />
+          <Link href="/">
+            <Image src={logo} alt="Inspiraspace logo" className="" />
+          </Link>
 
           <div className="hidden items-center gap-10 lg:flex">
             <Link href="#" className="leading-8">
