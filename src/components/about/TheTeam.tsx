@@ -82,7 +82,7 @@ const Team = () => {
   return (
     <div className="meet-the-team md:text-start text-center my-8 px-0 md:mx-5 md:my-20 lg:px-10">
         <div className="sub-meet">
-        <p className="mb-20 pl-0 text-xs font-medium text-[#4D5163] md:pl-5 md:text-sm lg:pl-16">
+        <p className="md:mb-20 pl-0 text-xs font-medium text-[#4D5163] md:pl-5 sm:mb-32 mb-28 md:text-sm lg:pl-16">
             MEET THE TEAM BEHIND IT ALL
         </p>
 
@@ -92,7 +92,7 @@ const Team = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             className="box px-5 lg:px-16"
         >
-            <div className="grid grid-cols-3 gap-x-3 gap-y-16 md:grid-cols-4 md:gap-x-10 md:gap-y-24">
+            <div className="grid grid-cols-3 gap-x-3 gap-y-24 md:mb-0 mb-5 md:grid-cols-4 md:gap-x-10 md:gap-y-24">
             {teams.map((item) => (
                 <motion.div
                 whileHover={{
@@ -105,14 +105,14 @@ const Team = () => {
                     },
                 }}
                 key={item.id}
-                className="flex h-[16.5vh] max-w-44 cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-[#DD9F39] bg-[#4D5163] xl:h-[25vh] md:h-[19.5vh]"
+                className="flex h-[17vh]  pb-18 max-w-44 cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-[#DD9F39] bg-[#4D5163] xl:h-[25vh] md:h-[19.5vh]"
                 >
                 <Image
                     src={item.image}
                     alt="people"
                     width={50}
                     height={50}
-                    className="-mt-[6em] md:-mt-[6.5em] w-[80%] md:w-[75%] rounded-full border-2 border-[#DD9F39]"
+                    className="-mt-[6em] md:-mt-[7em] sm:-mt-[7.5em] sm:w-[75%] w-[79%] md:w-[75%] rounded-full border-2 border-[#DD9F39]"
                 />
 
                 <div className="-mt-1">

@@ -7,17 +7,17 @@ const Section = () => {
 
   return (
     <div>
-        <div className="flex flex-col items-center justify-between gap-10 overflow-x-hidden py-5 md:flex-row">
+        <div className="flex flex-col md:items-center md:items-start md:justify-between gap-10 overflow-x-hidden py-5 md:flex-row">
             <motion.div
               initial={{ opacity: 0, x: -90 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeOut", duration: 1 }}
-              className="flex-initial sm:-ml-44 md:ml-0"
+              className="flex-initial"
             >
               <Image
                 src={sidepics}
                 alt="side pics"
-                className="mr-32 -ml-16 md:ml-0 w-[80%] md:mr-0 md:w-[45vw]"
+                className="float-left w-[80%] sm:w-[50%] md:w-[45vw]"
               />
             </motion.div>
             <motion.div
@@ -63,12 +63,12 @@ const Section = () => {
               initial={{ opacity: 0, x: 90 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeOut", duration: 1.5 }}
-              className="md:relative absolute top-2 md:overflow-x-none overflow-x-hidden"
+              className="md:relative absolute top-1 md:overflow-x-none overflow-x-hidden md:shrink-0"
             >
               <Image
                 src={rightside}
                 alt="side pics"
-                className="ml-16 w-[80%] md:ml-0 md:w-[38vw] lg:w-[34vw]"
+                className="ml-2 md:ml-0 md:w-[43vw] lg:w-[40vw] float-right"
               />
             </motion.div>
         </div>

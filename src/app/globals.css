@@ -31,9 +31,7 @@ header {
 }
 
 
-@media (max-width: 700px) {
-  
-  /* ABOUT PAGE */
+/* @media (max-width: 700px) {
   .sub-banner{
     background: url('/backgroud.png') rgba(235, 235, 235, 0.45);
     background-position: center;
@@ -47,4 +45,4 @@ header {
   .sub-banner .image{
     display: none;
   }
-}
+} */
