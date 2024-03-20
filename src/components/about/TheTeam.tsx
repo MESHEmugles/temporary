@@ -90,9 +90,9 @@ const Team = () => {
             initial={{ scale: 0.3, opacity: 0 }}
             transition={{ ease: "easeOut", duration: 2 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="box px-5 lg:px-16"
+            className="mx-auto max-w-5xl mx-2 py-10 md:py-20"
         >
-            <div className="grid grid-cols-3 gap-x-3 gap-y-24 md:mb-0 mb-5 md:grid-cols-4 md:gap-x-10 md:gap-y-24">
+            <div className="grid grid-cols-3 gap-x-3 gap-y-24 md:mb-0 mb-5 md:grid-cols-4 md:gap-x-10 md:gap-y-28">
             {teams.map((item) => (
                 <motion.div
                 whileHover={{
@@ -105,24 +105,24 @@ const Team = () => {
                     },
                 }}
                 key={item.id}
-                className="flex h-[17vh]  pb-18 max-w-44 cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-[#DD9F39] bg-[#4D5163] xl:h-[25vh] md:h-[19.5vh]"
+                className="flex pb-18 cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-[#DD9F39] bg-[#4D5163] max-w-52 h-[19vh] sm:h-[21vh] md:h-[185px] lg:h-[210px]"
                 >
                 <Image
                     src={item.image}
                     alt="people"
                     width={50}
                     height={50}
-                    className="-mt-[6em] md:-mt-[7em] sm:-mt-[7.5em] sm:w-[75%] w-[79%] md:w-[75%] rounded-full border-2 border-[#DD9F39]"
+                    className="-mt-[6em] lg:-mt-[9.2em] xl:-mt-[9em] sm:-mt-[7.5em] sm:w-[70%] w-[79%] md:w-[75%] rounded-full border-2 border-[#DD9F39] shrink-0"
                 />
 
-                <div className="-mt-1">
-                    <small className="ml-0 text-[0.3em] md:text-[0.55em] text-white md:ml-7">
+                <div className="xl:mt-0 lg:mt-2 -mt-1">
+                    <small className="ml-0 text-[0.3em] md:text-[0.7em] text-white md:ml-7">
                     {item.title}
                     </small>
-                    <p className="text-[0.75em] -mt-1.5 md:-mt-1 font-bold text-[#DD9F39] md:text-[1em]">
+                    <p className="text-[0.75em] -mt-1.5 md:-mt-0 font-bold text-[#DD9F39] md:text-[1.1em]">
                     {item.desc}
                     </p>
-                    <div className="relative top-[2.2em] flex flex-row justify-center gap-5 md:gap-7 md:top-18">
+                    <div className="relative top-[2.2em] flex flex-row justify-center gap-5 md:gap-10 md:top-[3.2em]">
                     <Link href="">
                         <Image
                         src={item.src1}
