@@ -5,7 +5,7 @@ import logo from "../app/icon.png";
 
 export default function Footer() {
   return (
-    <footer className="relative bottom-0 left-0 mx-0 border-t-2 bg-[#D8D8D882]">
+    <footer className="relative bottom-0 left-0 mx-0 border-t-2 md:bg-[#D8D8D882] bg-[#d3d9d9]">
       <div className="mx-auto max-w-[1440px] px-[24.94px] lg:px-[75px]">
         <div className="flex flex-col items-center justify-between pt-[10px] lg:flex-row lg:items-start lg:pt-[50px]">
           <div className="mb-[14.67px] flex flex-col items-start lg:mb-0 lg:flex-row lg:gap-[247px]">

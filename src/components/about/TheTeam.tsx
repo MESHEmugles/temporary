@@ -93,7 +93,7 @@ const Team = () => {
                 {teams.map((item) => (
                     <div
                     key={item.id}
-                    className="flex pb-18 cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-[#DD9F39] bg-[#4D5163] max-w-52 h-[19.7vh] sm:h-[21vh] md:h-[185px] lg:h-[210px]"
+                    className="flex md:pb-0 pb-9 cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-[#DD9F39] bg-[#4D5163] max-w-52 h-[19.7vh] sm:h-[21vh] md:h-[185px] lg:h-[210px]"
                     >
                     <Image
                         src={item.image}
