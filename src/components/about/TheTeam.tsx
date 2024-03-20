@@ -80,7 +80,7 @@ const Team = () => {
 
   return (
     <div>
-      <div className="meet-the-team text-center md:text-start my-8 px-0 md:mx-10 xl:mx-24 md:my-20 lg:px-10">
+      <div className="meet-the-team text-center md:text-start my-8 px-0 2xl:mx-[35em] md:mx-10 xl:mx-24 md:my-20 lg:px-10">
           <div className="sub-meet">
             <p className="text-xs font-medium text-[#4D5163] md:text-sm ">
                 MEET THE TEAM BEHIND IT ALL
